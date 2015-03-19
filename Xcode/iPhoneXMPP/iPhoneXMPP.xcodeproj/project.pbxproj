@@ -135,6 +135,7 @@
 		DCC22142149A61F000736DC1 /* XMPPRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC22135149A61F000736DC1 /* XMPPRoom.m */; };
 		DCC22146149A6C0100736DC1 /* XMPPIDTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC22145149A6C0100736DC1 /* XMPPIDTracker.m */; };
 		DCD4944312234A49004BEE1A /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD4944212234A49004BEE1A /* libresolv.dylib */; };
+		FEBFEEBD1ABA4B8E0061E78F /* XMPPOfflineMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBFEEBC1ABA4B8E0061E78F /* XMPPOfflineMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -393,6 +394,8 @@
 		DCD4944212234A49004BEE1A /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		DCE11268140C5798007A2A46 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMPPFramework.h; path = Classes/XMPPFramework.h; sourceTree = "<group>"; };
 		DCF3C0CE1365C68300111BA3 /* XMPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMPP.h; path = ../../Core/XMPP.h; sourceTree = "<group>"; };
+		FEBFEEBB1ABA4B8E0061E78F /* XMPPOfflineMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPOfflineMessage.h; sourceTree = "<group>"; };
+		FEBFEEBC1ABA4B8E0061E78F /* XMPPOfflineMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPOfflineMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,10 +424,11 @@
 			isa = PBXGroup;
 			children = (
 				DCB215761715EC0600719845 /* BandwidthMonitor */,
-				DC37309B139E9FD100A8407D /* Reconnect */,
 				DC488440134AEB06000F79C5 /* CoreDataStorage */,
+				DC37309B139E9FD100A8407D /* Reconnect */,
 				DC37309F139E9FDA00A8407D /* Roster */,
 				DCB215851715EC7E00719845 /* XEP-0009 */,
+				FEBFEEBA1ABA4A110061E78F /* XEP-0013 */,
 				DCB2158F1715EC8F00719845 /* XEP-0016 */,
 				DCC2211F149A61F000736DC1 /* XEP-0045 */,
 				070400591347CB510092A737 /* XEP-0054 */,
@@ -1147,6 +1151,15 @@
 			name = Private;
 			sourceTree = "<group>";
 		};
+		FEBFEEBA1ABA4A110061E78F /* XEP-0013 */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFEEBB1ABA4B8E0061E78F /* XMPPOfflineMessage.h */,
+				FEBFEEBC1ABA4B8E0061E78F /* XMPPOfflineMessage.m */,
+			);
+			path = "XEP-0013";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1278,6 +1291,7 @@
 				DC90AC66147C28850022DF52 /* DDAbstractDatabaseLogger.m in Sources */,
 				DC90AC67147C28850022DF52 /* DDASLLogger.m in Sources */,
 				DC90AC68147C28850022DF52 /* DDFileLogger.m in Sources */,
+				FEBFEEBD1ABA4B8E0061E78F /* XMPPOfflineMessage.m in Sources */,
 				DC90AC69147C28850022DF52 /* DDLog.m in Sources */,
 				DC90AC6A147C28850022DF52 /* DDTTYLogger.m in Sources */,
 				DCC22139149A61F000736DC1 /* XMPPRoom.xcdatamodeld in Sources */,
